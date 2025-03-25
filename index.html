@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
     <!-- <title>Document</title> -->
 </head>
 <body>
@@ -28,10 +29,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">Theme settings will be saved for <br>your next vist</p>
@@ -44,7 +45,7 @@
                             <div id="corner-tr" class="corner"> </div>
                             
                             <h3>What I Do</h3>
-                            <p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+                            <p>I am a Frontend developer, now I enjoy learning new things.</p>
 
                             <div id="corner-br" class="corner"> </div>
                             <div id="corner-bl" class="corner"> </div>
@@ -65,14 +66,14 @@
                 <div class="about-me">
 
                     <h4>More About Me</h4>
-                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-                    <p>While I keep busy teaching courses. I still take interviews in search of a great team & projects that interest me.</p>
+                    <p>I build new projects just to tickle my brain and love learning new technologies.</p>
+                    <p>While I keep busy learning courses. I still take interviews in search of a great team & projects that interest me.</p>
 
                     <hr>
 
                     <h4>Top Expertise</h4>
 
-                    <p>Fullstack developer with primary focus on Laravel + React: <a target="_blank" href="http://">Download Resume</a></p>
+                    <p>Frontend developer with primary focus on Laravel + React: <a target="_blank" href="http://">Download Resume</a></p>
 
                     <div id="skills">
                         <ul>
@@ -104,13 +105,68 @@
     </section>
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Projects</h3>
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/design.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">THis is a sentencse</p>
+                            <a href="/post.html">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/design.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">THis is a sentencse</p>
+                            <a href="#">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/design.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">THis is a entencse</p>
+                            <a href="#">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+
+            <h3 style="text-align: center;">Contact</h3>
+            <form id="contact-form" action="">
+                <label for="">Name</label>
+                <input class="input-field" type="text" >
+
+                <label for="">Subject</label>
+                <input class="input-field" type="text" >
+
+                <label for="">Email</label>
+                <input class="input-field" type="email" >
+
+                <label for="">Message</label>
+                <textarea class="input-field" type="email" ></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
